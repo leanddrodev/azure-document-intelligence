@@ -19,4 +19,4 @@ def analize_credit_card(card_url):
     "bank_name": fields .get( 'IssuingBank', ()).get('content'),
   }
  except Exception as ex:
-  return None
+  return ex
