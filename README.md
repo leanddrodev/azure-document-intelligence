@@ -36,7 +36,7 @@ Storage account criado com sucesso.
 Agora vamos pegar a Key e o nome do Storage Account. Clique no menu à esquerda em Security + Networking e depois em Access Keys. Na página, copie o Storage account name e a Key do serviço.
 
 - STORAGE_NAME = strlabdocintelleastus001
-- STORAGE_KEY = Qu43z5OawvBz2dY4CM71Y9m3vQo2MUTs1huR+pPic3b7...
+- STORAGE_CONNECTION_STRING="DefaultEndpointsProtocol=https;Acco...
 
 ### 1.3 Provisionar o Serviço Document Intelligence (form recognizer)
 
