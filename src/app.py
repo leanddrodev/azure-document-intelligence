@@ -1,4 +1,5 @@
 import streamlit as st
+from services.blob_service import upload_blob
 
 def configure_interface():
  st.title("Upload de Arquivo DIO - Azure - Fake Docs")
@@ -7,7 +8,7 @@ def configure_interface():
  if uploaded_file is not None:
   file_name = uploaded_file.name
   # Enviar para o blob storage
-  blob_url = ""
+  blob_url = upload_blob(uploaded_file, file_name)
   if blob_url:
    st.write(f"Arquivo {file_name} enviado com sucesso para o Azure Blob Storage")
    credit_card_info = ""
@@ -15,8 +16,8 @@ def configure_interface():
   else:
    st.write(f"Erro ao enviar o arquivo {file_name} para o Azure Blob Storage")
 
-def show_image_and_validation(blob url, credit_card_info):
- st. image(blob url, caption="lmagem enviada", use_column_width=True)
+def show_image_and_validation(blob_url, credit_card_info):
+ st.image(blob_url, caption="lmagem enviada", use_column_width=True)
  st.write("Resu1tado da validação:")
  if credit_card_info and credit_card_info["card_name"]:
   st.markdown(f"<hl style='color: green;'>Cartão Válido</h1>", unsafe_allow_html=True)
