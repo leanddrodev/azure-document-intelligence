@@ -1,6 +1,8 @@
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 class Config:
  ENDPOINT = os.getenv("DOCINTELL_ENDPOINT")
  KEY = os.getenv("DOCINTELL_KEY1")
