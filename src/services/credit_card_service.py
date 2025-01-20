@@ -10,11 +10,11 @@ def analize_credit_card(card_url):
   result = card_info.result()
 
   for document in result.documents:
-   fields = document.get('fields', ())
+   fields = document.get('fields', {})
    
    return {
-    "card_name": fields.get('CardHolderName', ()).get('content', ''),
-    "card_number": fields.get('CardNumber', ()).get('content', ''),
-    "expiry_date": fields.get('ExpirationDate', ()).get('content', ''),
-    "bank_name": fields.get('IssuingBank', ()).get('content', ''),
+    "card_name": fields.get('CardHolderName', {}).get('content'),
+    "card_number": fields.get('CardNumber', {}).get('content'),
+    "expiry_date": fields.get('ExpirationDate', {}).get('content'),
+    "bank_name": fields.get('IssuingBank', {}).get('content'),
   }

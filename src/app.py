@@ -3,7 +3,7 @@ from services.blob_service import upload_blob
 from services.credit_card_service import analize_credit_card
 
 def configure_interface():
- st.title("Upload de Arquivo DIO - Azure - Fake Docs")
+ st.title("Upload de Arquivo - Fake Cards")
  uploaded_file = st.file_uploader("Escolha um arquivo", type=["png", "jpg", "jpeg"])
 
  if uploaded_file is not None:
