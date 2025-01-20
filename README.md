@@ -7,7 +7,7 @@ Data Lake Gen 2 para armazenamento em nuvem confiável e econômico.
 
 - **Azure AI Document Intelligence** - Serviço AI do Azure que permite que você crie soluções inteligentes de processamento de documentos. Anteriormente conhecido como Azure Form Recognizer.
 
-## 1. Solução
+## 1. Configurando as Instâncias e Recursos
 
 ### 1.1 Criar um Grupo de Recursos 
 
@@ -79,3 +79,8 @@ Após, no menu à esquerda, clique em Settings e selecione Configuration. Na pá
 ![st7](./src/images/st7.png)
 
 Agora, acesse o container criado cartoes e no meu superior clique em Change access level e selecione Blob (anonymous read access for blobs only).
+
+Tudo pronto para criarmos a aplicação.
+
+## 2. Criando a Aplicação
+
