@@ -80,7 +80,25 @@ Após, no menu à esquerda, clique em Settings e selecione Configuration. Na pá
 
 Agora, acesse o container criado cartoes e no meu superior clique em Change access level e selecione Blob (anonymous read access for blobs only).
 
-Tudo pronto para criarmos a aplicação.
+Tudo pronto para a aplicação.
 
-## 2. Criando a Aplicação
+## 2. Resultado dos Testes
+
+Resultado dos testes realizados com a aplicação consumindo a API:
+
+### Resultado 1
+
+![teste-cartao1](./src/images/teste-cartao1.png)
+
+### Resultado 2
+
+![teste-cartao2](./src/images/teste-cartao2.png)
+
+### Resultado 3
+
+![teste-cartao3](./src/images/teste-cartao3.png)
+
+## 3. Conclusão
+
+O objetivo de desenvolver um _Identificador e Extrator de Dados de Cartão de Crédito_, usando os Serviços Azure Storage Account e Azure IA Document Intelligence foi alcançado. A aplicaçao construída com o Azure SDK para Python foi capaz de validar se a imagem é um cartão de crédito e extrair dados como _Nome do Titular_, _Banco Emissor_ e _Data de Validade_. 
 
