@@ -15,7 +15,7 @@ def analize_credit_card(card_url):
    return {
     "card_name": fields.get('CardHolderName', ()).get('content'),
     "card_number": fields.get('CardNumber', ()).get('content'),
-    "expiry_date": fields . get( ' ExpirationDate', ()).get('content'),
+    "expiry_date": fields . get( 'ExpirationDate', ()).get('content'),
     "bank_name": fields .get( 'IssuingBank', ()).get('content'),
   }
  except Exception as ex:
